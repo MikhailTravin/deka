@@ -1,0 +1,112 @@
+.page {
+	// .page__contacts
+	&__contacts {
+		padding: 0px 0px 120px 0px;
+		@media (max-width: $mobile) {
+			padding: 0px 0px 80px 0px;
+		}
+	}
+}
+
+.contacts {
+	// .contacts__container
+	&__container {
+	}
+	// .contacts__content
+	&__content {
+	}
+	// .contacts__h1
+	&__h1 {
+		margin: 0px 0px 80px 0px;
+		@media (max-width: $mobile) {
+			margin: 0px 0px 60px 0px;
+		}
+	}
+	// .contacts__body
+	&__body {
+	}
+	// .contacts__row
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0px 0px 80px 0px;
+		margin: -15px -4px;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			padding: 0px 0px 60px 0px;
+			margin: -8px 0px;
+		}
+	}
+	// .contacts__column
+	&__column {
+		flex: 0 1 25%;
+		padding: 15px 4px;
+		.contacts-bottom-header__social {
+			flex: 0 0 36px;
+		}
+		.contacts-bottom-header__socials {
+			padding: 0px 0px 0px 0px;
+		}
+		@media (max-width: $tablet) {
+			flex: 0 1 50%;
+		}
+		@media (max-width: $mobile) {
+			flex: 1 1 auto;
+			padding: 8px 0px;
+		}
+	}
+	// .contacts__item
+	&__item {
+		display: flex;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: math.div(24, 16);
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		max-width: 350px;
+		&::before {
+			width: 24px;
+			padding: 12px;
+			height: 24px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0px 20px 0px 0px;
+			font-size: 14px;
+			color: $color_blue;
+		}
+		ul {
+			margin: -3px 0px;
+			li {
+				padding: 3px 0px;
+				a {
+					transition: all 0.3s ease 0s;
+					&:hover {
+						color: $color_blue;
+					}
+				}
+			}
+		}
+		@media (max-width: $mobile) {
+			font-size: 14px;
+			line-height: math.div(21, 14);
+		}
+	}
+	// .contacts__email
+	&__email {
+		transition: all 0.3s ease 0s;
+		border-bottom: 1px solid $mainColor;
+		&:hover {
+			border-bottom: 1px solid transparent;
+		}
+	}
+	// .contacts__map
+	&__map {
+		height: 584px;
+		width: 100%;
+		iframe {
+			height: 584px;
+			width: 100%;
+		}
+	}
+}

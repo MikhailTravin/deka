@@ -1,0 +1,80 @@
+.checkbox {
+	position: relative;
+	.checkbox__input:disabled + .checkbox__label span {
+		opacity: 0.5;
+	}
+	// .checkbox__input
+	&__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		&:checked + .checkbox__label:after {
+			opacity: 1;
+		}
+	}
+	// .checkbox__label
+	&__label {
+		position: relative;
+		display: flex;
+		&:before {
+			content: "";
+			cursor: pointer;
+			display: flex;
+			transition: all 0.5s ease 0s;
+			align-self: flex-start;
+			flex: 0 0 22px;
+			width: 22px;
+			max-width: 22px;
+			height: 22px;
+			border: 2px solid #e6e6e6;
+			margin: 0px 15px 0px 0px;
+		}
+		&::after {
+			content: "";
+			cursor: pointer;
+			display: flex;
+			align-self: flex-start;
+			flex: 0 0 22px;
+			width: 22px;
+			height: 22px;
+			background: $color_blue;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			transition: all 0.3s ease 0s;
+			background-image: url("../img/icons/check.svg");
+			background-repeat: no-repeat;
+			background-size: 50% 50%;
+			background-position: 50%;
+		}
+	}
+	// .checkbox__text
+	&__text {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: math.div(21, 14);
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		flex: 1 1 auto;
+		margin: 0px 20px 0px 0px;
+		@media (max-width: $mobile) {
+			font-size: 13px;
+			line-height: math.div(20, 13);
+		}
+	}
+	// .checkbox__quantity
+	&__quantity {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: math.div(21, 14);
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #8c8c8c;
+		@media (max-width: $mobile) {
+			font-size: 13px;
+			line-height: math.div(20, 13);
+		}
+	}
+}

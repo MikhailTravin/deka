@@ -1,0 +1,124 @@
+body::after {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.8s ease 0s;
+	pointer-events: none;
+	z-index: 149;
+}
+.popup-show body::after {
+	opacity: 1;
+}
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 0px;
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+	pointer-events: none;
+}
+.popup_show {
+	z-index: 150;
+	visibility: visible;
+	overflow: auto;
+	pointer-events: auto;
+}
+.popup_show .popup__content {
+	visibility: visible;
+	transform: scale(1);
+}
+.popup__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+	flex: 1 1 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popup__content {
+	visibility: hidden;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+	background: #fafafa;
+	padding: 50px 30px 30px 30px;
+	width: 100%;
+	min-height: 100vh;
+	max-width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	.lock & {
+		visibility: visible;
+	}
+	@media (max-width: $mobile) {
+		padding: 20px 15px 20px 15px;
+	}
+}
+
+.popup__close {
+	position: absolute;
+	top: 34px;
+	right: 60px;
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f5f5f5;
+	transition: all 0.3s ease 0s;
+	z-index: 55;
+	&::before {
+		cursor: pointer;
+		width: 24px;
+		height: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 12px;
+		color: #8c8c8c;
+	}
+	&:hover {
+		background: #1eb9c7;
+		&::before {
+			color: $color_white;
+		}
+	}
+	@media (max-width: $mobile) {
+		top: 30px;
+		right: 16px;
+	}
+}
+
+.popup__images {
+	max-width: 400px;
+	margin: 0 auto;
+	.thumbs__slide {
+		&:nth-child(5) {
+			.thumbs__image {
+				border: 1px solid transparent;
+				img {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+.images-product__slider-2 {
+	position: relative;
+	margin: 0px 0px 50px 0px;
+	@media (max-width: $mobile) {
+		margin: 0px 0px 70px 0px;
+	}
+}

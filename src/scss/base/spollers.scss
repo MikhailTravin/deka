@@ -1,0 +1,210 @@
+// Базовые стили спойлеров
+// Сниппет (HTML): spoller
+
+//Спойлеры фильтр
+.spollers-filter {
+	margin: 0px 0px 8px 0px;
+	&:last-child {
+		margin: 0px 0px 0px 0px;
+	}
+	// .spollers-filter__item
+	&__item {
+		background: $color_grey_light;
+	}
+	// .spollers-filter__title
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px 35px;
+		width: 100%;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: math.div(24, 16);
+		letter-spacing: 0.03em;
+		span {
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 12px;
+			width: 24px;
+			height: 24px;
+			position: relative;
+			margin: 0px 0px 0px 20px;
+			transition: all 0.3s ease 0s;
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transition: all 0.3s ease 0s;
+				margin: 0px 0px 0px -5.5px;
+				background-color: $mainColor;
+				width: 12px;
+				height: 2px;
+			}
+			&::before {
+				transform: rotate(-90deg);
+			}
+		}
+		&._spoller-active {
+			span {
+				&::before {
+					transform: rotate(0deg);
+				}
+			}
+		}
+		@media (max-width: $mobile) {
+			font-size: 14px;
+			line-height: math.div(21, 14);
+			padding: 25px 30px 20px 30px;
+		}
+	}
+	// .spollers-filter__body
+	&__body {
+		padding: 0px 35px 30px 35px;
+		@media (max-width: $mobile) {
+			padding: 0px 30px 25px 30px;
+		}
+	}
+	// .spollers-filter__showmore
+	&__showmore {
+	}
+}
+
+.showmore-spollers-filter {
+	// .showmore-spollers-filter__content
+	&__content {
+	}
+	// .showmore-spollers-filter__checkboxes
+	&__checkboxes {
+		margin: -5px 0px;
+	}
+	// .showmore-spollers-filter__checkbox
+	&__checkbox {
+		padding: 5px 0px;
+	}
+	// .showmore-spollers-filter__more
+	&__more {
+		margin: 20px 0px 0px 0px;
+		span {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: math.div(21, 14);
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+			color: $color_blue;
+			transition: all 0.3s ease 0s;
+			&:hover {
+				color: $color_blue_2;
+			}
+		}
+		@media (max-width: $mobile) {
+			span {
+				font-size: 13px;
+				line-height: math.div(20, 13);
+			}
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+//Вопросы спойлер главная
+.questions-spollers {
+	// .questions-spollers__row
+	&__row {
+		flex: 0 1 50%;
+		@media (max-width: $tablet) {
+			flex: 1 1 auto;
+		}
+	}
+	// .questions-spollers__column
+	&__column {
+		padding: 4px;
+		@media (max-width: $tablet) {
+			padding: 4px 0px;
+		}
+	}
+	// .questions-spollers__item
+	&__item {
+		background: $color_grey_light;
+	}
+	// .questions-spollers__title
+	&__title {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-weight: 400;
+		text-align: left;
+		font-size: 18px;
+		line-height: math.div(27, 18);
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		padding: 25px 25px 25px 40px;
+		span {
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 24px;
+			width: 48px;
+			height: 48px;
+			background: $color_blue;
+			position: relative;
+			margin: 0px 0px 0px 20px;
+			transition: all 0.3s ease 0s;
+			&:hover {
+				background: $color_blue_2;
+			}
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transition: all 0.3s ease 0s;
+				margin: -1px 0px 0px -5.5px;
+				background-color: $color_white;
+				width: 12px;
+				height: 2px;
+			}
+			&::before {
+				transform: rotate(-90deg);
+			}
+		}
+		&._spoller-active {
+			span {
+				&::before {
+					transform: rotate(0deg);
+				}
+			}
+		}
+		@media (max-width: $mobile) {
+			font-size: 16px;
+			line-height: math.div(24, 16);
+			padding: 16px;
+			span {
+				width: 36px;
+				height: 36px;
+				padding: 18px;
+			}
+		}
+	}
+	// .questions-spollers__body
+	&__body {
+		font-family: $fontFamilyGilroy;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: math.div(21, 14);
+		padding: 20px 120px 35px 40px;
+		@media (max-width: $mobile) {
+			padding: 16px;
+			font-size: 13px;
+			line-height: math.div(20, 13);
+		}
+	}
+}

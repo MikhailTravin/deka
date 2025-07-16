@@ -1,0 +1,41 @@
+.page {
+	// .page__privacy-police
+	&__privacy-police {
+		margin: 0px 0px 120px 0px;
+		@media (max-width: $mobile) {
+			margin: 0px 0px 80px 0px;
+		}
+	}
+}
+
+.privacy-police {
+	// .privacy-police__container
+	&__container {
+	}
+	// .privacy-police__h1
+	&__h1 {
+		max-width: 952px;
+		word-wrap: break-word;
+	}
+	// .privacy-police__text
+	&__text {
+		max-width: 952px;
+		p {
+			font-family: $fontFamilyGilroy;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: math.div(21, 14);
+			margin: 0px 0px 25px 0px;
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+		@media (max-width: $mobile) {
+			p {
+				font-size: 13px;
+				line-height: math.div(20, 13);
+				margin: 0px 0px 20px 0px;
+			}
+		}
+	}
+}

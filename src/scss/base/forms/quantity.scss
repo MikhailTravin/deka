@@ -1,0 +1,84 @@
+//<QUANTITY>
+// Снипет (HTML): qa
+.quantity {
+	width: 104px;
+	height: 24px;
+	display: flex;
+	&.disabled {
+		.quantity__button_minus {
+			&::before,
+			&::after {
+				background: #bfbfbf;
+			}
+		}
+	}
+	@media (max-width: $mobileSmall) {
+		width: 88px;
+	}
+	// .quantity__button
+	&__button {
+		flex: 0 0 24px;
+		position: relative;
+		cursor: pointer;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transition: all 0.3s ease 0s;
+			margin: 0px 0px 0px -4.5px;
+			background-color: $mainColor;
+			width: 12px;
+			height: 2px;
+		}
+		&:hover {
+			&::before,
+			&::after {
+				background-color: $color_blue;
+			}
+		}
+		// .quantity__button_plus
+		&_plus {
+			&::before {
+				transform: rotate(-90deg);
+			}
+		}
+		// .quantity__button_minus
+		&_minus {
+		}
+	}
+	// .quantity__input
+	&__input {
+		flex: 0 0 36px;
+		input {
+			background: transparent;
+			height: 100%;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: math.div(21, 14);
+			text-align: center;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+			width: 100%;
+			text-align: center;
+		}
+		@media (max-width: $mobileSmall) {
+			flex: 0 0 30px;
+			input {
+				font-size: 13px;
+				line-height: math.div(20, 13);
+			}
+		}
+	}
+}
+
+.quantity-disabled {
+	pointer-events: none;
+	.quantity__button {
+		&::before,
+		&::after {
+			background: #bfbfbf;
+		}
+	}
+}

@@ -1,0 +1,73 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: $color_blue;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: math.div(24, 16);
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: $color_white;
+	transition: all 0.3s ease 0s;
+	padding: 25px;
+	&::before {
+		width: 24px;
+		height: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 12px;
+		color: $color_white;
+		margin: 0px 0px 0px 10px;
+	}
+	&:hover {
+		background: #41a7b0;
+	}
+	@media (max-width: $mobileSmall) {
+		padding: 26px;
+		font-size: 14px;
+		line-height: math.div(21, 14);
+	}
+}
+
+.link {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: math.div(24, 16);
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+	justify-content: start;
+	background: transparent;
+	color: $color_blue;
+	&::before {
+		width: 24px;
+		height: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 12px;
+		color: $color_blue;
+		margin: 0px 0px 0px 10px;
+	}
+	&:hover {
+		color: #41a7b0;
+		background: transparent;
+		&::before {
+			color: #41a7b0;
+		}
+	}
+	@media (max-width: $mobileSmall) {
+		font-size: 14px;
+		line-height: math.div(21, 14);
+	}
+}
