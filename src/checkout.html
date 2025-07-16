@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Оформление заказа"
+	})
+	<body class="checkout">
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="breadcrambs">
+					<div class="breadcrambs__container">
+						<div class="breadcrambs__content">
+							<ul>
+								<li><a href="#">Главная<span>/</span></a></li>
+								<li><span>Оформление заказа </span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="page__checkout checkout">
+					<div class="checkout__container">
+						<div class="checkout__content">
+							<h1 class="checkout__h1 h1">Оформление заказа </h1>
+							<form action="#" class="checkout__forms">
+								<div class="checkout__left left-checkout">
+									<div class="left-checkout__order">
+										<div class="left-checkout__forms">
+											<div class="left-checkout__info">
+												<div class="left-checkout__column">
+													<h4 class="left-checkout__h4">1. Личные данные</h4>
+													<div class="left-checkout__inputs">
+														<div class="left-checkout__input">
+															<label>Ваше имя *</label>
+															<input data-validate data-required data-error="Неккоректный ввод имени" type="name" name="form[]" placeholder="Александр">
+														</div>
+														<div class="left-checkout__input">
+															<label>Ваша фамилия *</label>
+															<input data-validate data-required data-error="Неккоректный ввод фамилии" type="username" name="form[]" placeholder="Иванов">
+														</div>
+														<div class="left-checkout__input">
+															<label>E-mail *</label>
+															<input data-required data-validate type="email" data-error="Неккоректный email" name="form[]" placeholder="example@mail.com">
+														</div>
+														<div class="left-checkout__input">
+															<label>Номер телефона *</label>
+															<input data-validate data-required data-error="Неккоректный номер телефона" placeholder="+7(926)-900-00-38" id="tel" type="text" name="form[]" class="input-tel">
+														</div>
+													</div>
+												</div>
+												<div class="left-checkout__column">
+													<h4 class="left-checkout__h4">2. Доставка</h4>
+													<div class="left-checkout__inputs">
+														<div class="left-checkout__input">
+															<label>Данные доставки *</label>
+															<input data-validate data-required data-error="Неккоректный данные доставки" type="text" name="form[2]" placeholder="г.Москва Десеновское поселение, 3-я Нововатутинская улица, д.8 офис 28, 1 этаж">
+														</div>
+													</div>
+												</div>
+												<div class="left-checkout__column">
+													<h4 class="left-checkout__h4">3. Дополнительная информация</h4>
+													<div class="left-checkout__textarea">
+														<label>Комментарий *</label>
+														<textarea data-validate data-required data-error="Неккоректный комментарий" placeholder="Дополнительная информация"></textarea>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="checkout__right right-checkout">
+									<div class="right-checkout__body">
+										<div class="basket__content">
+											<div class="basket__top">
+												<div class="basket__title">
+													Товары в Заказе
+													<span>4 товара</span>
+												</div>
+											</div>
+											<div class="basket__center">
+												<div class="basket__product product-basket">
+													<div class="product-basket__item">
+														<a href="#" class="product-basket__image">
+															<img data-src="../img/product/product-2.webp" srcset="../img/product/product-2.webp 1x, ../img/product/product-2@2x.webp 2x" alt="">
+														</a>
+														<div class="product-basket__content">
+															<div class="product-basket__left">
+																<div class="product-basket__desc">
+																	<a href="#" class="product-basket__title">Костюм летний “СИРИУС-ВОЛОГДА”, Куртка, брюки</a>
+																	<div class="product-basket__subtitle">
+																		<p>Код товара: 6806248</p>
+																		<p>44-46 / 182-188, 5 x 2 599.00 ₽</p>
+																		<p>56-58 / 182-188, 2 x 3 299.00 ₽</p>
+																	</div>
+																</div>
+															</div>
+															<div class="product-basket__right">
+																<div class="product-basket__sum">28 799.00 ₽</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="basket__product product-basket">
+													<div class="product-basket__item">
+														<a href="#" class="product-basket__image">
+															<img data-src="../img/product/product-3.webp" srcset="../img/product/product-3.webp 1x, ../img/product/product-3@2x.webp 2x" alt="">
+														</a>
+														<div class="product-basket__content">
+															<div class="product-basket__left">
+																<div class="product-basket__desc">
+																	<a href="#" class="product-basket__title">Перчатки трикотажные с ПВХ ДВОЙНЫЕ черный</a>
+																	<div class="product-basket__subtitle">
+																		<p>Код товара: 3506248</p>
+																		<p>M, 523 x 299.00 ₽</p>
+																		<p>XL, 285 x 399.00 ₽</p>
+																	</div>
+																</div>
+															</div>
+															<div class="product-basket__right">
+																<div class="product-basket__sum">138 144.00 ₽</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="basket__product product-basket">
+													<div class="product-basket__item">
+														<a href="#" class="product-basket__image">
+															<img data-src="../img/product/product-4.webp" srcset="../img/product/product-4.webp 1x, ../img/product/product-4@2x.webp 2x" alt="">
+														</a>
+														<div class="product-basket__content">
+															<div class="product-basket__left">
+																<div class="product-basket__desc">
+																	<a href="#" class="product-basket__title">Очки открытые РОСОМЗ™ О37 UNIVERSAL TITAN</a>
+																	<div class="product-basket__subtitle">
+																		<p>Код товара: 5306248</p>
+																		<p>Стандартный размер, 1 x 1 399.00 ₽</p>
+																	</div>
+																</div>
+															</div>
+															<div class="product-basket__right">
+																<div class="product-basket__sum">1 399.00 ₽</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="basket__product product-basket">
+													<div class="product-basket__item">
+														<a href="#" class="product-basket__image">
+															<img data-src="../img/product/product-1.webp" srcset="../img/product/product-1.webp 1x, ../img/product/product-1@2x.webp 2x" alt="">
+														</a>
+														<div class="product-basket__content">
+															<div class="product-basket__left">
+																<div class="product-basket__desc">
+																	<a href="#" class="product-basket__title">Сапоги формовые резиновые мужские (1 сорт), черный</a>
+																	<div class="product-basket__subtitle">
+																		<p>Код товара: 1206248</p>
+																		<p>44-46 / 182-188, 5 x 2 599.00 ₽</p>
+																		<p>56-58 / 182-188, 2 x 3 299.00 ₽</p>
+																	</div>
+																</div>
+															</div>
+															<div class="product-basket__right">
+																<div class="product-basket__sum">3 523.00 ₽</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="right-checkout__buttons">
+											<div class="basket__total">
+												<span>Итого к оплате:</span>
+												223 899.00 ₽
+											</div>
+											<button type="submit" class="basket__button button _icon-arrow">Оформить заказ</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

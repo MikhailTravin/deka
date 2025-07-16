@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Фильтр"
+	})
+	<body class="filter">
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="breadcrambs">
+					<div class="breadcrambs__container">
+						<div class="breadcrambs__content">
+							<ul>
+								<li><a href="#">Главная<span>/</span></a></li>
+								<li><a href="#">Каталог товаров<span>/</span></a></li>
+								<li><span>Средства для защиты рук</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="page__filter filter">
+					<div class="filter__container">
+						<h1 class="filter__h1 h1">Средства для ЗАЩИТы РУК</h1>
+						<div class="filter__body">
+							<div class="filter__filter-block">
+								<div class="filter__filter-block-mob filter-block-mob">
+									<div class="filter-block-mob__title">
+										Фильтры
+										<span class="filter-block-mob__close _icon-close"></span>
+									</div>
+								</div>
+								<div class="filter__filter-block-spollers">
+									<div data-spollers class="filter__spollers spollers-filter">
+										<div class="spollers-filter__item">
+											<button type="button" data-spoller class="spollers-filter__title">Цена, ₽<span></span></button>
+											<div class="spollers-filter__body">
+												<div data-range class="spollers-filter__rating">
+													<div class="rating__values">
+														<div class="rating__value">
+															<input data-range-from="0" value="12.00" type="text" placeholder="12.00">
+														</div>
+														<div class="rating__line"></div>
+														<div class="rating__value">
+															<input data-range-to="100000" value="9523.00" type="text" placeholder="9 523.00">
+														</div>
+													</div>
+													<div data-range-item class="rating__range"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-spollers class="filter__spollers spollers-filter">
+										<div class="spollers-filter__item">
+											<button type="button" data-spoller class="spollers-filter__title">Защитные свойства<span></span></button>
+											<div class="spollers-filter__body">
+												<div data-showmore class="spollers-filter__showmore showmore-spollers-filter">
+													<div data-showmore-content="185" class="showmore-spollers-filter__content">
+														<div class="showmore-spollers-filter__checkboxes">
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<label for="c_1" class="checkbox__label">
+																	<span class="checkbox__text">защита от проколов и порезов</span>
+																	<span class="checkbox__quantity">42</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_2" class="checkbox__input" type="checkbox" value="2" name="form[]">
+																<label for="c_2" class="checkbox__label">
+																	<span class="checkbox__text">защита от проколов и порезов</span>
+																	<span class="checkbox__quantity">102</span>
+																</label>
+															</div>
+														</div>
+													</div>
+													<button hidden data-showmore-button type="button" class="showmore-spollers-filter__more">
+														<span>Показать еще</span>
+														<span>Скрыть</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-spollers class="filter__spollers spollers-filter">
+										<div class="spollers-filter__item">
+											<button type="button" data-spoller class="spollers-filter__title">Цвет<span></span></button>
+											<div class="spollers-filter__body">
+												<div data-showmore class="spollers-filter__showmore showmore-spollers-filter">
+													<div data-showmore-content="246" class="showmore-spollers-filter__content">
+														<div class="showmore-spollers-filter__checkboxes">
+															<div class="showmore-spollers-filter__checkbox checkbox">
+																<input id="c_3" class="checkbox__input" type="checkbox" value="3" name="form[1]">
+																<label for="c_3" class="checkbox__label">
+																	<span class="checkbox__text">Чёрный</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">27</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox checkbox">
+																<input id="c_4" class="checkbox__input" type="checkbox" value="4" name="form[1]">
+																<label for="c_4" class="checkbox__label">
+																	<span class="checkbox__text">Белый</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">8</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox checkbox">
+																<input id="c_5" class="checkbox__input" type="checkbox" value="5" name="form[1]">
+																<label for="c_5" class="checkbox__label">
+																	<span class="checkbox__text">Серый</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">18</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox checkbox">
+																<input disabled id="c_6" class="checkbox__input" type="checkbox" value="6" name="form[1]">
+																<label for="c_6" class="checkbox__label">
+																	<span class="checkbox__text">Бежевый</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">31</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_7" class="checkbox__input" type="checkbox" value="7" name="form[1]">
+																<label for="c_7" class="checkbox__label">
+																	<span class="checkbox__text">Красный</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">2</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_8" class="checkbox__input" type="checkbox" value="8" name="form[1]">
+																<label for="c_8" class="checkbox__label">
+																	<span class="checkbox__text">Синий</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">15</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_9" class="checkbox__input" type="checkbox" value="9" name="form[1]">
+																<label for="c_9" class="checkbox__label">
+																	<span class="checkbox__text">Фиолетовый</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">27</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_10" class="checkbox__input" type="checkbox" value="10" name="form[1]">
+																<label for="c_10" class="checkbox__label">
+																	<span class="checkbox__text">Зеленый</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">9</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_11" class="checkbox__input" type="checkbox" value="11" name="form[1]">
+																<label for="c_11" class="checkbox__label">
+																	<span class="checkbox__text">Зеленый</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">9</span>
+																</label>
+															</div>
+														</div>
+													</div>
+													<button hidden data-showmore-button type="button" class="showmore-spollers-filter__more">
+														<span>Показать еще</span>
+														<span>Скрыть</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-spollers class="filter__spollers spollers-filter">
+										<div class="spollers-filter__item">
+											<button type="button" data-spoller class="spollers-filter__title">Размер<span></span></button>
+											<div class="spollers-filter__body">
+												<div data-showmore class="spollers-filter__showmore showmore-spollers-filter">
+													<div data-showmore-content="185" class="showmore-spollers-filter__content">
+														<div class="showmore-spollers-filter__checkboxes">
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_12" class="checkbox__input" type="checkbox" value="12" name="form[2]">
+																<label for="c_12" class="checkbox__label">
+																	<span class="checkbox__text">S</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">128</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_13" class="checkbox__input" type="checkbox" value="13" name="form[2]">
+																<label for="c_13" class="checkbox__label">
+																	<span class="checkbox__text">M</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">74</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_14" class="checkbox__input" type="checkbox" value="14" name="form[2]">
+																<label for="c_14" class="checkbox__label">
+																	<span class="checkbox__text">L</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">93</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_15" class="checkbox__input" type="checkbox" value="15" name="form[2]">
+																<label for="c_15" class="checkbox__label">
+																	<span class="checkbox__text">XL</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">154</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_16" class="checkbox__input" type="checkbox" value="16" name="form[2]">
+																<label for="c_16" class="checkbox__label">
+																	<span class="checkbox__text">XXL</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">211</span>
+																</label>
+															</div>
+														</div>
+													</div>
+													<button hidden data-showmore-button type="button" class="showmore-spollers-filter__more">
+														<span>Показать еще</span>
+														<span>Скрыть</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div data-spollers class="filter__spollers spollers-filter">
+										<div class="spollers-filter__item">
+											<button type="button" data-spoller class="spollers-filter__title">Гост<span></span></button>
+											<div class="spollers-filter__body">
+												<div data-showmore class="spollers-filter__showmore showmore-spollers-filter">
+													<div data-showmore-content="185" class="showmore-spollers-filter__content">
+														<div class="showmore-spollers-filter__checkboxes">
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_17" class="checkbox__input" type="checkbox" value="17" name="form[3]">
+																<label for="c_17" class="checkbox__label">
+																	<span class="checkbox__text">XL</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">154</span>
+																</label>
+															</div>
+															<div class="showmore-spollers-filter__checkbox">
+																<input id="c_18" class="checkbox__input" type="checkbox" value="18" name="form[3]">
+																<label for="c_18" class="checkbox__label">
+																	<span class="checkbox__text">XXL</span>
+																	<span class="checkbox__border"></span>
+																	<span class="checkbox__quantity">211</span>
+																</label>
+															</div>
+														</div>
+													</div>
+													<button hidden data-showmore-button type="button" class="showmore-spollers-filter__more">
+														<span>Показать еще</span>
+														<span>Скрыть</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button data-da=".filter__filter-block-mob, 991.98" type="button" class="filter__spoller-button button">Показать выбранное<span>21</span></button>
+								</div>
+							</div>
+							<div class="filter__content">
+								<div class="filter__content-block">
+									<div class="filter__tabs tabs-filter">
+										<div class="tabs-filter__top">
+											<div class="tabs-filter__selected-products selected-products">
+												<div class="selected-products__products">
+													<div class="selected-products__total">
+														<span>Выбрано 121 товаров </span>
+													</div>
+													<div class="selected-products__remove">
+														<span>Сбросить</span>
+													</div>
+													<div class="selected-products__product">
+														<span>
+															Jeta Safety
+															<button type="button" class="_icon-close"></button>
+														</span>
+													</div>
+													<div class="selected-products__product">
+														<span>
+															Xl
+															<button type="button" class="_icon-close"></button>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="tabs-filter__filter-block-icon _icon-filter">
+												Все Фильтры
+											</div>
+											<div class="tabs-filter__select">
+												<div class="select__select-title">Сортировка:</div>
+												<select name="form[]">
+													<option value="1" selected>По популярности</option>
+													<option value="2">По возрастанию цены</option>
+													<option value="3">По убыванию цены</option>
+													<option value="4">По размеру скидки</option>
+													<option value="5">По новизне</option>
+												</select>
+											</div>
+										</div>
+										<div class="tabs-filter__content">
+											<div class="tabs-filter__body">
+												<div class="tabs-filter__slides">
+													<div class="tabs-filter__slide slide-product block-top-slide">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-3.webp" srcset="../img/product/product-3.webp 1x, ../img/product/product-3@2x.webp 2x" alt>
+																</a>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки трикотажные</a>
+																	<a href="#" class="slide-product__subtitle">Перчатки трикотажные с ПВХ ДВОЙНЫЕ черный</a>
+																</div>
+																<div class="slide-product__stock">В наличии 6 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">199.00 ₽</div>
+																	</div>
+																</div>
+																<div class="slide-product__new">Новинка</div>
+																<div class="slide-product__desc-block popular">Популярное</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-15@2x.webp" srcset="../img/product/product-15.webp 1x, ../img/product/product-15@2x.webp 2x" alt>
+																</a>
+																<div class="slide-product__color">
+																	<button style="background-color: #464c8f;" class="slide-product__options _active" data-src="../img/product/product-15@2x.webp" srcset="../img/product/product-15.webp 1x, ../img/product/product-15@2x.webp 2x">
+																	</button>
+																	<button style="background-color: #9c3b3b;" class="slide-product__options" data-src="../img/product/product-3@2x.webp" srcset="../img/product/product-3.webp 1x, ../img/product/product-3@2x.webp 2x">
+																	</button>
+																	<button style="background-color: #4b93d8;" class="slide-product__options" data-src="../img/product/product-4@2x.webp" srcset="../img/product/product-4.webp 1x, ../img/product/product-4@2x.webp 2x">
+																	</button>
+																	<button style="background-color: #212121;" class="slide-product__options" data-src="../img/product/product-5@2x.webp" srcset="../img/product/product-5.webp 1x, ../img/product/product-5@2x.webp 2x">
+																	</button>
+																</div>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки одноразовые</a>
+																	<a href="#" class="slide-product__subtitle">Перчатки нитриловые одноразовые CE APP RN 100</a>
+																</div>
+																<div class="slide-product__stock">В наличии 9 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">19.00 ₽</div>
+																	</div>
+																</div>
+																<div class="slide-product__desc-block popular">Популярное</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-16.webp" srcset="../img/product/product-16.webp 1x, ../img/product/product-16@2x.webp 2x" alt>
+																</a>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки от пониженных температур</a>
+																	<a href="#" class="slide-product__subtitle">Перчатки цельноспилковые утепленные Gward Driver Lux</a>
+																</div>
+																<div class="slide-product__stock stock-min">В наличии 1 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">599.00 ₽</div>
+																	</div>
+																</div>
+																<div class="slide-product__new">Новинка</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-17.webp" srcset="../img/product/product-17.webp 1x, ../img/product/product-17@2x.webp 2x" alt>
+																</a>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки от пониженных температур</a>
+																	<a href="#" class="slide-product__subtitle">Перчатки СТАЛКЕР ФРОСТ (SPL-73)</a>
+																</div>
+																<div class="slide-product__stock">В наличии 3 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">199.00 ₽</div>
+																		<div class="slide-product__price-old">
+																			<s>359.00 ₽</s>
+																		</div>
+																	</div>
+																</div>
+																<div class="slide-product__desc-block sale">Распродажа</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-18.webp" srcset="../img/product/product-18.webp 1x, ../img/product/product-18@2x.webp 2x" alt>
+																</a>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки от вибрации</a>
+																	<a href="#" class="slide-product__subtitle">Антивибрационные перчатки Gward VibroHIT</a>
+																</div>
+																<div class="slide-product__out">Закончились</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">599.00 ₽</div>
+																		<div class="slide-product__price-old">
+																			<s>799.00 ₽</s>
+																		</div>
+																	</div>
+																</div>
+																<div class="slide-product__desc-block sale">Распродажа</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-19@2x.webp" srcset="../img/product/product-19.webp 1x, ../img/product/product-19@2x.webp 2x" alt>
+																</a>
+																<div class="slide-product__color">
+																	<button style="background-color: #00b587;" class="slide-product__options _active" data-src="../img/product/product-19@2x.webp" srcset="../img/product/product-19.webp 1x, ../img/product/product-19@2x.webp 2x">
+																	</button>
+																	<button style="background-color: #ff8d4d;" class="slide-product__options" data-src="../img/product/product-3@2x.webp" srcset="../img/product/product-3.webp 1x, ../img/product/product-3@2x.webp 2x">
+																	</button>
+																</div>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки от повышенных температур</a>
+																	<a href="#" class="slide-product__subtitle">Термостойкие от высоких температур MaxiTherm® 30-201</a>
+																</div>
+																<div class="slide-product__stock">В наличии 15 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">19.00 ₽</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-15@2x.webp" srcset="../img/product/product-15.webp 1x, ../img/product/product-15@2x.webp 2x" alt>
+																</a>
+																<div class="slide-product__color">
+																	<button style="background-color: #464c8f;" class="slide-product__options _active" data-src="../img/product/product-15@2x.webp" srcset="../img/product/product-15.webp 1x, ../img/product/product-15@2x.webp 2x">
+																	</button>
+																	<button style="background-color: #9c3b3b;" class="slide-product__options" data-src="../img/product/product-3@2x.webp" srcset="../img/product/product-3.webp 1x, ../img/product/product-3@2x.webp 2x">
+																	</button>
+																	<button style="background-color: #4b93d8;" class="slide-product__options" data-src="../img/product/product-4@2x.webp" srcset="../img/product/product-4.webp 1x, ../img/product/product-4@2x.webp 2x">
+																	</button>
+																	<button style="background-color: #212121;" class="slide-product__options" data-src="../img/product/product-5@2x.webp" srcset="../img/product/product-5.webp 1x, ../img/product/product-5@2x.webp 2x">
+																	</button>
+																</div>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки одноразовые</a>
+																	<a href="#" class="slide-product__subtitle">Перчатки нитриловые одноразовые CE APP RN 100</a>
+																</div>
+																<div class="slide-product__stock">В наличии 9 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">19.00 ₽</div>
+																	</div>
+																</div>
+																<div class="slide-product__desc-block popular">Популярное</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-16.webp" srcset="../img/product/product-16.webp 1x, ../img/product/product-16@2x.webp 2x" alt>
+																</a>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки от пониженных температур</a>
+																	<a href="#" class="slide-product__subtitle">Перчатки цельноспилковые утепленные Gward Driver Lux</a>
+																</div>
+																<div class="slide-product__stock">В наличии 5 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">599.00 ₽</div>
+																	</div>
+																</div>
+																<div class="slide-product__new">Новинка</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product block-top-slide">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-3.webp" srcset="../img/product/product-3.webp 1x, ../img/product/product-3@2x.webp 2x" alt>
+																</a>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки трикотажные</a>
+																	<a href="#" class="slide-product__subtitle">Перчатки трикотажные с ПВХ ДВОЙНЫЕ черный</a>
+																</div>
+																<div class="slide-product__stock">В наличии 6 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">199.00 ₽</div>
+																	</div>
+																</div>
+																<div class="slide-product__new">Новинка</div>
+																<div class="slide-product__desc-block popular">Популярное</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-18.webp" srcset="../img/product/product-18.webp 1x, ../img/product/product-18@2x.webp 2x" alt>
+																</a>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки от вибрации</a>
+																	<a href="#" class="slide-product__subtitle">Антивибрационные перчатки Gward VibroHIT</a>
+																</div>
+																<div class="slide-product__out">Закончились</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">599.00 ₽</div>
+																		<div class="slide-product__price-old">
+																			<s>799.00 ₽</s>
+																		</div>
+																	</div>
+																</div>
+																<div class="slide-product__desc-block sale">Распродажа</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-19@2x.webp" srcset="../img/product/product-19.webp 1x, ../img/product/product-19@2x.webp 2x" alt>
+																</a>
+																<div class="slide-product__color">
+																	<button style="background-color: #00b587;" class="slide-product__options _active" data-src="../img/product/product-19@2x.webp" srcset="../img/product/product-19.webp 1x, ../img/product/product-19@2x.webp 2x">
+																	</button>
+																	<button style="background-color: #ff8d4d;" class="slide-product__options" data-src="../img/product/product-3@2x.webp" srcset="../img/product/product-3.webp 1x, ../img/product/product-3@2x.webp 2x">
+																	</button>
+																</div>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки от повышенных температур</a>
+																	<a href="#" class="slide-product__subtitle">Термостойкие от высоких температур MaxiTherm® 30-201</a>
+																</div>
+																<div class="slide-product__stock">В наличии 15 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">19.00 ₽</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-17.webp" srcset="../img/product/product-17.webp 1x, ../img/product/product-17@2x.webp 2x" alt>
+																</a>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки от пониженных температур</a>
+																	<a href="#" class="slide-product__subtitle">Перчатки СТАЛКЕР ФРОСТ (SPL-73)</a>
+																</div>
+																<div class="slide-product__stock">В наличии 3 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">199.00 ₽</div>
+																		<div class="slide-product__price-old">
+																			<s>359.00 ₽</s>
+																		</div>
+																	</div>
+																</div>
+																<div class="slide-product__desc-block sale">Распродажа</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-16.webp" srcset="../img/product/product-16.webp 1x, ../img/product/product-16@2x.webp 2x" alt>
+																</a>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки от пониженных температур</a>
+																	<a href="#" class="slide-product__subtitle">Перчатки цельноспилковые утепленные Gward Driver Lux</a>
+																</div>
+																<div class="slide-product__stock">В наличии 5 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">599.00 ₽</div>
+																	</div>
+																</div>
+																<div class="slide-product__new">Новинка</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product block-top-slide">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-3.webp" srcset="../img/product/product-3.webp 1x, ../img/product/product-3@2x.webp 2x" alt>
+																</a>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки трикотажные</a>
+																	<a href="#" class="slide-product__subtitle">Перчатки трикотажные с ПВХ ДВОЙНЫЕ черный</a>
+																</div>
+																<div class="slide-product__stock">В наличии 6 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">199.00 ₽</div>
+																	</div>
+																</div>
+																<div class="slide-product__new">Новинка</div>
+																<div class="slide-product__desc-block popular">Популярное</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-15@2x.webp" srcset="../img/product/product-15.webp 1x, ../img/product/product-15@2x.webp 2x" alt>
+																</a>
+																<div class="slide-product__color">
+																	<button style="background-color: #464c8f;" class="slide-product__options _active" data-src="../img/product/product-15@2x.webp" srcset="../img/product/product-15.webp 1x, ../img/product/product-15@2x.webp 2x">
+																	</button>
+																	<button style="background-color: #9c3b3b;" class="slide-product__options" data-src="../img/product/product-3@2x.webp" srcset="../img/product/product-3.webp 1x, ../img/product/product-3@2x.webp 2x">
+																	</button>
+																	<button style="background-color: #4b93d8;" class="slide-product__options" data-src="../img/product/product-4@2x.webp" srcset="../img/product/product-4.webp 1x, ../img/product/product-4@2x.webp 2x">
+																	</button>
+																	<button style="background-color: #212121;" class="slide-product__options" data-src="../img/product/product-5@2x.webp" srcset="../img/product/product-5.webp 1x, ../img/product/product-5@2x.webp 2x">
+																	</button>
+																</div>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки одноразовые</a>
+																	<a href="#" class="slide-product__subtitle">Перчатки нитриловые одноразовые CE APP RN 100</a>
+																</div>
+																<div class="slide-product__stock">В наличии 9 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">19.00 ₽</div>
+																	</div>
+																</div>
+																<div class="slide-product__desc-block popular">Популярное</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-19@2x.webp" srcset="../img/product/product-19.webp 1x, ../img/product/product-19@2x.webp 2x" alt>
+																</a>
+																<div class="slide-product__color">
+																	<button style="background-color: #00b587;" class="slide-product__options _active" data-src="../img/product/product-19@2x.webp" srcset="../img/product/product-19.webp 1x, ../img/product/product-19@2x.webp 2x">
+																	</button>
+																	<button style="background-color: #ff8d4d;" class="slide-product__options" data-src="../img/product/product-3@2x.webp" srcset="../img/product/product-3.webp 1x, ../img/product/product-3@2x.webp 2x">
+																	</button>
+																</div>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки от повышенных температур</a>
+																	<a href="#" class="slide-product__subtitle">Термостойкие от высоких температур MaxiTherm® 30-201</a>
+																</div>
+																<div class="slide-product__stock">В наличии 15 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">19.00 ₽</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-17.webp" srcset="../img/product/product-17.webp 1x, ../img/product/product-17@2x.webp 2x" alt>
+																</a>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки от пониженных температур</a>
+																	<a href="#" class="slide-product__subtitle">Перчатки СТАЛКЕР ФРОСТ (SPL-73)</a>
+																</div>
+																<div class="slide-product__stock">В наличии 3 размеров</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">199.00 ₽</div>
+																		<div class="slide-product__price-old">
+																			<s>359.00 ₽</s>
+																		</div>
+																	</div>
+																</div>
+																<div class="slide-product__desc-block sale">Распродажа</div>
+															</div>
+														</div>
+													</div>
+													<div class="tabs-filter__slide slide-product">
+														<div class="slide-product__item">
+															<div class="slide-product__image picture">
+																<a href="#">
+																	<img data-src="../img/product/product-18.webp" srcset="../img/product/product-18.webp 1x, ../img/product/product-18@2x.webp 2x" alt>
+																</a>
+															</div>
+															<div class="slide-product__content">
+																<div class="slide-product__top">
+																	<a href="#" class="slide-product__title">Перчатки от вибрации</a>
+																	<a href="#" class="slide-product__subtitle">Антивибрационные перчатки Gward VibroHIT</a>
+																</div>
+																<div class="slide-product__out">Закончились</div>
+																<div class="slide-product__bottom">
+																	<div class="slide-product__total">
+																		<div class="slide-product__price-new">599.00 ₽</div>
+																		<div class="slide-product__price-old">
+																			<s>799.00 ₽</s>
+																		</div>
+																	</div>
+																</div>
+																<div class="slide-product__desc-block sale">Распродажа</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="button" class="filter__button-showmore _icon-load">
+									<span>Показать ещё</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

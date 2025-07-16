@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"404"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="page__error">
+					<div class="error__container">
+						<div class="error__content">
+							<div class="error__title">404</div>
+							<div class="error__subtitle">Страница не найдена</div>
+							<div class="error__text">Неправильно набран адрес или такой страницы больше не существует.</div>
+							<a href="#" class="error__button button _icon-arrow">Вернуться на главную</a>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
